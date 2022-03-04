@@ -16,8 +16,9 @@ export const HeroImage = () => {
     
     setSwidth(window.innerWidth)
     window.onresize=()=>{setSwidth(window.innerWidth)}
-    console.log(sWidth)
+    // console.log(sWidth)
     window.onload=()=>{setSwidth(window.innerWidth)}
+    setSwidth(window.innerWidth)
       // detecting when the screen resizes
 },[ sWidth])
 
@@ -27,8 +28,8 @@ export const HeroImage = () => {
         {sWidth>=600 && <>
           <ShapeImg src='/shapes/circleArrow.png'  /> 
           <Circle/>
-        
         </> }
+        
     </ImageWrapper>
   )
 }
