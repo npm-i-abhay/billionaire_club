@@ -31,4 +31,8 @@ background-color:#AC32E410;
 top:15%;
 left:-30%;
 z-index:-2;
+@media (max-width: 500px) {
+ display:none;
+ 
+}
 `

@@ -97,10 +97,18 @@ position:absolute;
 z-index:${props=>props.zIndex};
 top:${props=>props.top};
 left:${props=>props.left};
+@media (max-width: 500px) {
+    display:none;
+    
+   }
 `
 
 export const Pattern=styled.img`
 object-fit:contain;
 height:100%;
 width:100%;
+@media (max-width: 500px) {
+    display:none;
+    
+   }
 `

@@ -22,9 +22,11 @@ import { FooterLinks } from '@/props'
 export const Footer = () => {
   const {theme}= useTheme()
   const themer = comp_theme[theme]
+// declaring variable to connect the provider
+
   return (
+    
     <FooterWrapper  >
-        
         <LinksRow>
             <Logo src='/graphics/logo.png' /> 
             {FooterLinks.map((o,i)=>(

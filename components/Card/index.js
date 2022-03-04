@@ -32,13 +32,14 @@ export const Card = () => {
 
   const {theme}= useTheme()
   const themer = comp_theme[theme]
+// declaring variable to connect the provider
 
   const [sWidth, setSwidth] = useState(0)
   
+// detecting when the screen resizes to display dynamic content
   useEffect(()=>{
     setSwidth(window.innerWidth)
   window.onresize=()=>{setSwidth(window.innerWidth)}
-  // detecting when the screen resizes
   },[sWidth])
 
 

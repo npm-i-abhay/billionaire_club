@@ -4,11 +4,16 @@ import { Router, useRouter } from 'next/router';
 import { useTheme } from '@/utils/provider';
 import { comp_theme } from '@/utils/variables';
 
+// components imports 
 import { HeaderHam} from '../HeaderHam';
 
 // styled components
 import { Container, Flex } from '@/styles/globalStyles';
 import { Nav, NavHeader, NavList, NavVideos, HamIconCont } from './styles';
+
+
+// data import 
+import { links } from '@/props';
 
 export const Navigation = (
     {
@@ -16,33 +21,7 @@ export const Navigation = (
     setToggleMenu,
     hamClick=()=>{}},
     myHam,
-    links =[
-        {
-            id:0,
-            title:"Home",
-            link:'/'
-        },
-        {
-            id:4,
-            title:"Features",
-            link:'/Features'
-        },
-        {
-            id:1,
-            title:"Roadmap",
-            link:'/Roadmap'
-        },
-        {
-            id:2,
-            title:"Team",
-            link:'/Team'
-        },
-        {
-            id:2,
-            title:"Join Discord",
-            link:'/Join'
-        },
-    ]
+    
     
     ) => {
     const r =useRouter()
@@ -88,13 +67,6 @@ export const Navigation = (
                 
             </ul>
         </NavList>
-        <NavVideos  
-            revealBG={comp_theme[theme].menu}>
-            <motion.div 
-            className='reveal'
-            animate={{width:reveal.show ? 0 :"100%"}}>
-            </motion.div>
-        </NavVideos>
     </Container>
   </Nav> }
   </AnimatePresence>

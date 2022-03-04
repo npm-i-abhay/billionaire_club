@@ -5,6 +5,37 @@ export const NavLinks=[
     {name:'Roadmap', route:'/roadmap'},
     {name:'Team', route:'/team'},
 ] 
+
+
+// hamburger links
+export const links =[
+    {
+        id:0,
+        title:"Home",
+        link:'/'
+    },
+    {
+        id:4,
+        title:"Features",
+        link:'/Features'
+    },
+    {
+        id:1,
+        title:"Roadmap",
+        link:'/Roadmap'
+    },
+    {
+        id:2,
+        title:"Team",
+        link:'/Team'
+    },
+    {
+        id:2,
+        title:"Join Discord",
+        link:'/Join'
+    },
+]
+
 export const FooterLinks=[
     {name:'Terms of Service', route:'/Terms'},
     {name:'Privacy Policy', route:'/Privacy'},

@@ -12,7 +12,6 @@ flex-wrap:wrap;
 @media (max-width: 500px) {
     align-items:center;
     flex-wrap:no-wrap;
-
 }
 `
 export const MainHead = styled.span`
@@ -31,6 +30,10 @@ object-fit:contain;
 margin-top:-30px;
 margin-left:-10px;
 // position:absolute;
+@media (max-width: 500px) {
+    display:none;
+    
+   }
 `
 
 export const MainHeadContainer= styled.div`
